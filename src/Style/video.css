@@ -1,0 +1,90 @@
+#video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero .cotent{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+}
+
+.hero .cotent h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero .cotent p{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.hero .btn{
+    margin: 1rem .2rem;
+}
+
+@media screen and (max-width :768px){
+    .content h1{
+        font-size: 3rem;
+    }
+
+    .content p{
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

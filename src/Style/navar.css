@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+  backdrop-filter: blur(5px);
   width: 100%;
   padding: 1rem;
   z-index:10;
@@ -20,6 +22,12 @@
 
 .nav-menu li{
   padding: 0 1rem;
+  
+}
+
+.nav-menu li:hover{
+  border-bottom: 1px solid red;
+  transition: cubic-bezier(0.86, 0, 0.07, 1)s;
 }
 
 .nav-menu a{
@@ -27,11 +35,77 @@
   font-weight: 500;
 }
 
+/* .m2{
+  max-width: 5rem;
+  transition: none;
+  transform: scale(none);
+
+} */
+
 .hambur{
   display: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1240px){
+.piDo, .aiFill{
+  color: white;
+}
+
+.piDo:hover, .aiFill:hover{
+  color: rgb(172, 162, 176);
+}
+
+.con-btn-1{
+  margin-right: 1rem;
+}
+
+/* .popularPlaces{
+  display: inline-block;
+  position: absolute;
+  bottom: -35rem;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: relative; 
+}
+
+.h3{
+  color: white;
+  padding: 1rem 0;
+  position: relative; 
+}
+
+.h3::after{
+  content:'';
+  width: 83%;
+  height: 2px;
+  background-color: aliceblue;
+  right: 0;
+  bottom: 50%;
+  position: absolute;
+}
+
+.images{
+  justify-content: center;
+  align-items: center;
+}
+
+.i6{
+  height: 100px;
+  width: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+} */
+
+
+@media screen and (max-width: 768px){
   .hambur{
     display: block;
   }
@@ -56,12 +130,17 @@
   }
 
   .nav-menu li{
-    padding: 1rem 0;
+    padding: 1rem 0; 
   }
 
   .nav-menu a{
     font-size: 1.2rem;
   }
+
+  .con-btn-1{
+    margin-left: 19rem;
+  }
+
 }
 
 

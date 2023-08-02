@@ -1,56 +1,96 @@
+/* *{
+    color: white;
+    border: 1px solid red;
+} */
+
+
 .footer{
     width: 100%;
-    padding: 16rem 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 0;
+    background-color: rgba(185, 90, 90, 0.8);
 }
 
 .footer-container{
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    /* max-width: 1140px; */
+    text-align: center;
+    align-items: flex-start;
+    /* margin: auto; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-gap: 5rem;
 }
 
 .footer .left{
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
+    /* height: 100%;
+    max-width: 100%; */
+    gap: 2rem;
     padding: 1rem;
 }
 
-.footer .right{
-    height: 100%;
-    max-width: 100%;
+.logo{
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 1.5rem;
+}
+
+.m2{
+    max-width: 3rem; 
+}
+
+.social{
+    cursor: pointer;
+    /* gap: 4rem; */
+    margin-right: 1.5rem;
+    
+}
+
+.icon4{
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    color: black;
+    font-size: 25px;
+    
+    
+}
+
+.li{
+    /* text-decoration: none; */
+    list-style: none;
+}
+
+.li a{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    margin: auto;
+    /* gap: 2rem; */
+    margin: .5rem;
+    
 }
 
-.footer h4{
-    font-size: 1.2rem;
-    padding: 1rem 0;
+.footherLink{
+    display: grid;
+    row-gap: .2rem;
 }
 
-.footer p {
-    font-size: 1rem;
-    padding: 1rem 0;
+.linkTitle{
+    padding-bottom: .2rem;
+    color: black;
+    font-weight: 700;
+    margin: .6rem;
 }
 
-.footer .location{
-    display: flex;
-align-items: center;
+.t2{
+    /* margin-right: .5rem; */
+    color: rgb(0, 0, 0);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 }
 
-.footer .location p{
-    padding-bottom: .5rem;
-}
-
-.footer .location h4{
-    padding-top: 0;
-}
 
 @media screen and (max-width: 768px) {
     .footer-container{

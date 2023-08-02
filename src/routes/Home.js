@@ -1,16 +1,25 @@
 // import React from 'react'
 import Footer from '../components/Foother'
-import  Navar  from '../components/Navar'
+import Navar from '../components/Navar'
 import Video from "../components/Video"
+import Catalogo from '../components/Catalogo'
+import Searchf from '../components/Searchf';
+import Bienestar from '../components/Bienestar';
 
 
 const Home = () => {
   return (
-   <div>
-    <Navar/>
-    <Video />
-    <Footer/>
-   </div>
+    <>
+      <div>
+        <Navar />
+        <Video />
+        <Searchf />
+        <Bienestar />
+        <Catalogo />
+        <Footer />
+      </div>
+      
+    </>
   )
 }
 

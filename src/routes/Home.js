@@ -4,7 +4,9 @@ import Navar from '../components/Navar'
 import Video from "../components/Video"
 import Catalogo from '../components/Catalogo'
 import Searchf from '../components/Searchf';
-import Bienestar from '../components/Bienestar';
+import Typewriter from '../components/Typewriter'
+// import Midle from '../components/Midle';
+
 
 
 const Home = () => {
@@ -14,7 +16,9 @@ const Home = () => {
         <Navar />
         <Video />
         <Searchf />
-        <Bienestar />
+        {/* <Midle /> */}
+        <Typewriter />
+        {/* <Bienestar /> */}
         <Catalogo />
         <Footer />
       </div>

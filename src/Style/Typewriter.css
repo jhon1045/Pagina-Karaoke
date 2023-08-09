@@ -1,0 +1,60 @@
+/* Typewriter.css */
+
+.typewriter-container {
+  display: flex;
+  align-items: center; /* Centrar en la parte superior */
+  justify-content: center;
+  background: white;
+  height: 80px;
+  font-family: Arial, sans-serif;
+  /* border-radius: 10px; */
+}
+
+.typewriter {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.cursor {
+  display: inline-block;
+  width: 4px;
+  height: 12px;
+  background-color: black;
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .typewriter-container {
+    height: 80px;
+    /* Agrega el borde redondeado solo en esta resolución */
+    /* border-radius: 10px; */
+  }
+
+  .typewriter {
+    font-size: 32px;
+    padding: 30px;
+  }
+
+  .cursor {
+    width: 6px;
+    height: 18px;
+  }
+}

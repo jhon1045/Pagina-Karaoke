@@ -1,0 +1,100 @@
+.midle {
+    width: 100%;
+    position: relative;
+  }
+  
+  .seccon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .grid-1 {
+    position: relative;
+    background-color: black;
+    padding: 2rem 6rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flex-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  
+  .im {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .cph {
+    width: 15rem;
+  }
+  
+  .H {
+    font-size: 1.5rem;
+  }
+  
+  .v {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+  }
+  
+  .t1 {
+    width: 10rem;
+    height: 4rem;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 3px solid rgb(79, 69, 69);
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(79, 69, 69);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .t1:hover {
+    background-color: rgb(79, 69, 69);
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .grid-1 {
+      padding: 2rem 3rem; /* Ajusta el padding para pantallas más pequeñas */
+    }
+    
+    .flex-1 {
+      flex-direction: column; /* Cambia la dirección de los elementos en columna */
+      gap: 2rem; /* Reduce el espacio entre elementos */
+    }
+    
+    .im {
+      width: 4rem; /* Redimensiona la imagen */
+      height: 4rem;
+    }
+    
+    .cph {
+      width: 10rem; /* Redimensiona la imagen */
+    }
+    
+    .H {
+      font-size: 1.2rem; /* Ajusta el tamaño de fuente */
+    }
+    
+    .v {
+      font-size: 0.9rem; /* Ajusta el tamaño de fuente */
+      margin-top: 0.4rem;
+    }
+    
+    .t1 {
+      width: 8rem; /* Redimensiona el botón */
+      height: 3rem;
+      font-size: 13px; /* Ajusta el tamaño de fuente */
+    }
+  }
+
+
+

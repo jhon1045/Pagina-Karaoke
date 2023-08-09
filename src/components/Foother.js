@@ -1,76 +1,102 @@
 import React from 'react'
+import fb from '../assets/icon/facebook_1313704.png'
+import li from '../assets/icon/linkedin_145807.png'
+import tw from '../assets/icon/twitter_3670151.png'
 import '../Style/footer.css'
-import  imag1  from '../assets/img/imag1.png'
-import { FaPhone } from 'react-icons/fa'
-import { ImFacebook } from 'react-icons/im'
-import { BsTwitter } from 'react-icons/bs'
-import { AiFillInstagram } from 'react-icons/ai'
-import { CgMail } from 'react-icons/cg'
-import { GrContact } from 'react-icons/gr'
- 
-const Footer = () => {
+
+export default function Foother() {
   return (
     <div className='footer'>
-      <div className='footer-container'>
-        <div className='left'>
-          <div className='logo'>
-            <img src={ imag1 } className='m2'/>
+      <div className='sb__footer section_padding'>
+        <div className='sb__footer-links'>
+          <div className='sb__footer-links-div'>
+            <h4>for Business</h4>
+            <a href='#'>
+              <p>Employer</p>
+            </a>
+
+            <a href='#'>
+              <p>held plan</p>
+            </a>
+
+            <a href='#'>
+              <p>individual</p>
+            </a>
+          </div>
+
+          <div className='sb__footer-links-div'>
+            <h4>for Business</h4>
+            <a href='#'>
+              <p>Employer</p>
+            </a>
+
+            <a href='#'>
+              <p>held plan</p>
+            </a>
+
+            <a href='#'>
+              <p>individual</p>
+            </a>
+          </div>
+
+          <div className='sb__footer-links-div'>
+            <h4>for Business</h4>
+            <a href='#'>
+              <p>Employer</p>
+            </a>
+
+            <a href='#'>
+              <p>held plan</p>
+            </a>
+
+            <a href='#'>
+              <p>individual</p>
+            </a>
+          </div>
+
+          <div className='sb__footer-links-div'>
+            <h4>for Business</h4>
+            <a href='#'>
+              <p>Employer</p>
+            </a>
+
+            <a href='#'>
+              <p>held plan</p>
+            </a>
+
+            <a href='#'>
+              <p>individual</p>
+            </a>
+          </div>
+
+
+          <div className='sb__footer-links-div'>
+            <h4>Cooming soon </h4>
+            <div className='socialMedia'>
+              <p><img src={fb} alt='logo pagina' /></p>
+              <p><img src={tw} alt='logo pagina' /></p>
+              <p><img src={li} alt='logo pagina' /></p>
+            </div>
           </div>
         </div>
-        
-          <div className='social flex'>
-            <ImFacebook className='icon4'/>
-            <BsTwitter className='icon4'/>
-            <AiFillInstagram className='icon4'/>
+
+        <hr></hr>
+
+        <div className='sb__footer-below'>
+          <div className='sb__footer-copiryng'>
+            <p>
+              @{new Date().getFullYear()} Codeinn. All right reserved
+            </p>
           </div>
 
-          <div className='footherLink'>
-            <span className='linkTitle'>
-              Information
-            </span>
-
-            <li className='li'>
-              <a href='#'>Home</a>
-              <a href='#'>Explore</a>
-              <a href='#'>Travel</a>
-              <a href='#'>Blog</a>
-            </li>
+          <div className='sb__footer-below-links'>
+            <a href='#'><div><p>Terms & Conditions</p></div></a>
+            <a href='#'><div><p>Privacyti</p></div></a>
+            <a href='#'><div><p>Security</p></div></a>
+            <a href='#'><div><p>Cookie Declaration</p></div></a>
           </div>
-
-          <div className='footherLink'>
-            <span className='linkTitle'>
-              Helpful links
-            </span>
-
-            <li className='li'>
-              <a href='#'>Help</a>
-              <a href='#'>Support</a>
-              <a href='#'>Travel</a>
-              <a href='#'>privacy</a>
-            </li>
-          </div>
-
-          <div className='footherLink'>
-            <span className='linkTitle'>
-              Helpful links
-            </span>
-
-            <li className='li'>
-              <a href='#'>Help</a>
-              <a href='#'>Support</a>
-              <a href='#'>Travel & Condition</a>
-              <a href='#'>privacy</a>
-            </li>
-          </div>
-
-          <div className='footherLink'>
-            <span className='linkTitle'><GrContact className='icon4 t2'/> contact Details</span>
-            <span className='linkTitle'><FaPhone className='icon4 t2'/>+651 123 456 23</span>
-            <span className='linkTitle'><CgMail className='icon4 t2'/>jkt@gmail.com</span>
-          </div>
+        </div>
       </div>
     </div>
   )
 }
-
-export default Footer
